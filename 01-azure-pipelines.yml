@@ -20,7 +20,7 @@ stages:
         - bash: mvn -version
         - bash: ls -R $(Build.ArtifactStagingDirectory)
 
-        - task: Copying_Files
+        - task: CopyFiles@2
           inputs:
             SourceFolder: '$(System.DefaultWorkingDirectory)'
             Contents: |
