@@ -24,7 +24,6 @@ stages:
       displayName: Build an image
       inputs:
         containerRegistry: 'anurag_docker_connection'
-        repository: 'currency_exchange'
         command: 'buildAndPush'
         Dockerfile: '**/Dockerfile'
         tags: '$(tag)'
