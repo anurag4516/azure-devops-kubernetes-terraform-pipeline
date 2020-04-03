@@ -24,6 +24,7 @@ stages:
       displayName: Build an image
       inputs:
         containerRegistry: 'anurag_docker_connection'
+        repository: 'azure'
         command: 'buildAndPush'
         Dockerfile: '**/Dockerfile'
         tags: '$(tag)'
